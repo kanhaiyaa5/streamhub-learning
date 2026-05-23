@@ -117,6 +117,10 @@ def search_flights(api_key: str, outbound_date: str, return_date: str) -> list[d
             "airline": legs[0].get("airline", ""),
             "stops_out": len(legs) - 1,
             "total_duration_min": f.get("total_duration"),
+            "layovers": [
+                {"airport": (lv.get("id") or "?"), "duration_min": int(lv.get("duration") or 0)}
+                for lv in (f.get("layovers") or [])
+            ],
             "link": _google_flights_link(origin, dest, outbound_date, return_date),
         })
     return offers
@@ -180,15 +184,38 @@ def save_state(state: dict[str, Any]) -> None:
 
 
 # ---------------------------- Slack message ----------------------------
+def _fmt_duration(minutes: int | None) -> str:
+    """120 → '2h', 145 → '2h25m', 60 → '1h'."""
+    if not minutes:
+        return ""
+    h, m = divmod(int(minutes), 60)
+    if h and m:
+        return f"{h}h{m:02d}m"
+    if h:
+        return f"{h}h"
+    return f"{m}m"
+
+
 def fmt_line(o: dict) -> str:
     stops_n = o.get("stops_out", 0) or 0
     stops_str = "direct" if stops_n == 0 else f"{stops_n} stop{'s' if stops_n > 1 else ''}"
     airline = f" {o['airline']}" if o.get("airline") else ""
+
+    extras: list[str] = []
+    dur = _fmt_duration(o.get("total_duration_min"))
+    if dur:
+        extras.append(dur)
+    for lv in (o.get("layovers") or []):
+        lv_dur = _fmt_duration(lv.get("duration_min"))
+        if lv_dur:
+            extras.append(f"{lv_dur} {lv.get('airport') or '?'}")
+    extras_str = " · " + " · ".join(extras) if extras else ""
+
     link = o.get("link") or ""
     link_part = f" — <{link}|view>" if link else ""
     return (
         f"• *{o['origin']}→{o['destination']}* — *€{int(o['price'])}* "
-        f"({stops_str}{airline}) — {o['outbound_date']} → {o['return_date']}{link_part}"
+        f"({stops_str}{airline}{extras_str}) — {o['outbound_date']} → {o['return_date']}{link_part}"
     )
 
 
