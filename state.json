@@ -1,5 +1,114 @@
 {
-  "last_run": null,
-  "rotation_index": 0,
-  "prices": {}
+  "last_run": "2026-05-23T07:22:31.811169+00:00",
+  "rotation_index": 2,
+  "prices": {
+    "AMS-BOM|2026-12-26|2027-02-22": {
+      "origin": "AMS",
+      "destination": "BOM",
+      "price": 737.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "Scandinavian Airlines",
+      "stops_out": 1,
+      "total_duration_min": 710,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20BOM%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "CDG-BOM|2026-12-26|2027-02-22": {
+      "origin": "CDG",
+      "destination": "BOM",
+      "price": 747.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "British Airways",
+      "stops_out": 1,
+      "total_duration_min": 760,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20CDG%20to%20BOM%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "DUS-BOM|2026-12-26|2027-02-22": {
+      "origin": "DUS",
+      "destination": "BOM",
+      "price": 778.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "British Airways",
+      "stops_out": 1,
+      "total_duration_min": 765,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20DUS%20to%20BOM%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "BRU-DEL|2026-12-26|2027-02-22": {
+      "origin": "BRU",
+      "destination": "DEL",
+      "price": 855.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "Brussels Airlines",
+      "stops_out": 1,
+      "total_duration_min": 860,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20BRU%20to%20DEL%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "CDG-CCU|2026-12-26|2027-02-22": {
+      "origin": "CDG",
+      "destination": "CCU",
+      "price": 957.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "Qatar Airways",
+      "stops_out": 1,
+      "total_duration_min": 770,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20CDG%20to%20CCU%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "CDG-DEL|2026-12-26|2027-02-22": {
+      "origin": "CDG",
+      "destination": "DEL",
+      "price": 958.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "Air India",
+      "stops_out": 0,
+      "total_duration_min": 540,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20CDG%20to%20DEL%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "AMS-DEL|2026-12-26|2027-02-22": {
+      "origin": "AMS",
+      "destination": "DEL",
+      "price": 1183.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-22",
+      "airline": "Air India",
+      "stops_out": 0,
+      "total_duration_min": 535,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20DEL%20on%202026-12-26%20returning%202027-02-22",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "AMS-BOM|2026-12-26|2027-02-25": {
+      "origin": "AMS",
+      "destination": "BOM",
+      "price": 1310.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-25",
+      "airline": "Turkish Airlines",
+      "stops_out": 1,
+      "total_duration_min": 750,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20BOM%20on%202026-12-26%20returning%202027-02-25",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    },
+    "AMS-DEL|2026-12-26|2027-02-25": {
+      "origin": "AMS",
+      "destination": "DEL",
+      "price": 1522.0,
+      "outbound_date": "2026-12-26",
+      "return_date": "2027-02-25",
+      "airline": "Turkish Airlines",
+      "stops_out": 1,
+      "total_duration_min": 745,
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20DEL%20on%202026-12-26%20returning%202027-02-25",
+      "checked_at": "2026-05-23T07:22:31.811169+00:00"
+    }
+  }
 }
