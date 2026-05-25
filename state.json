@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-05-25T14:49:28.567389+00:00",
-  "rotation_index": 22,
+  "last_run": "2026-05-25T19:26:11.526345+00:00",
+  "rotation_index": 0,
   "prices": {
     "AMS-BOM|2026-12-26|2027-02-22": {
       "origin": "AMS",
@@ -1915,6 +1915,68 @@
       "layovers": [],
       "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20DEL%20on%202027-01-07%20returning%202027-02-25",
       "checked_at": "2026-05-25T14:49:28.567389+00:00"
+    },
+    "AMS-BOM|2027-01-07|2027-02-28": {
+      "origin": "AMS",
+      "destination": "BOM",
+      "price": 989.0,
+      "outbound_date": "2027-01-07",
+      "return_date": "2027-02-28",
+      "airline": "IndiGo",
+      "stops_out": 0,
+      "total_duration_min": 510,
+      "layovers": [],
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20BOM%20on%202027-01-07%20returning%202027-02-28",
+      "checked_at": "2026-05-25T19:26:11.526345+00:00"
+    },
+    "AMS-DEL|2027-01-07|2027-02-28": {
+      "origin": "AMS",
+      "destination": "DEL",
+      "price": 1517.0,
+      "outbound_date": "2027-01-07",
+      "return_date": "2027-02-28",
+      "airline": "Turkish Airlines",
+      "stops_out": 1,
+      "total_duration_min": 745,
+      "layovers": [
+        {
+          "airport": "IST",
+          "duration_min": 120
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20DEL%20on%202027-01-07%20returning%202027-02-28",
+      "checked_at": "2026-05-25T19:26:11.526345+00:00"
+    },
+    "AMS-BOM|2027-01-07|2027-03-05": {
+      "origin": "AMS",
+      "destination": "BOM",
+      "price": 918.0,
+      "outbound_date": "2027-01-07",
+      "return_date": "2027-03-05",
+      "airline": "IndiGo",
+      "stops_out": 0,
+      "total_duration_min": 510,
+      "layovers": [],
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20BOM%20on%202027-01-07%20returning%202027-03-05",
+      "checked_at": "2026-05-25T19:26:11.526345+00:00"
+    },
+    "AMS-DEL|2027-01-07|2027-03-05": {
+      "origin": "AMS",
+      "destination": "DEL",
+      "price": 1647.0,
+      "outbound_date": "2027-01-07",
+      "return_date": "2027-03-05",
+      "airline": "Turkish Airlines",
+      "stops_out": 1,
+      "total_duration_min": 745,
+      "layovers": [
+        {
+          "airport": "IST",
+          "duration_min": 120
+        }
+      ],
+      "link": "https://www.google.com/travel/flights?q=Flights%20from%20AMS%20to%20DEL%20on%202027-01-07%20returning%202027-03-05",
+      "checked_at": "2026-05-25T19:26:11.526345+00:00"
     }
   }
 }
